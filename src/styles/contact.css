@@ -1,0 +1,105 @@
+.atlas {
+  --trade-ink: #e9e5d8; --trade-muted: #a6b09a; --trade-accent: #d1bd94;
+  --trade-line: #49533f; --trade-panel: #eeeade; --trade-panel-ink: #2c3725;
+  --trade-panel-muted: #69775b; --trade-button: #283a28; --trade-button-text: #f9f6ec;
+}
+.terra {
+  --trade-ink: #292d25; --trade-muted: #757b6c; --trade-accent: #a54d35;
+  --trade-line: #cdd0bf; --trade-panel: #ebe8dc; --trade-panel-ink: #292d25;
+  --trade-panel-muted: #737b67; --trade-button: #a54d35; --trade-button-text: #fff8ec;
+}
+.trade-container { width: calc(100% - 128px); max-width: 1280px; margin-inline: auto; }
+.trade-contact-page { padding: 43px 0 104px; color: var(--trade-ink); }
+.trade-back-link { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; font-size: 10px; color: var(--trade-muted); }
+.trade-back-link:hover { color: var(--trade-accent); }
+.trade-contact-layout { display: grid; grid-template-columns: .86fr 1.14fr; gap: 92px; align-items: start; margin-top: 62px; }
+.trade-contact-intro { padding-top: 10px; }
+.trade-kicker { display: flex; align-items: center; gap: 12px; font-size: 8px; letter-spacing: 1.7px; color: var(--trade-accent); margin: 0; }
+.trade-kicker > span { width: 21px; height: 1px; background: currentColor; }
+.trade-contact-intro h1 { font-size: clamp(40px, 4.25vw, 62px); font-weight: 400; letter-spacing: -2.6px; line-height: 1.16; margin: 28px 0 25px; }
+.trade-contact-intro h1 em { font-family: 'Cormorant Garamond', serif; font-size: 1.2em; font-weight: 400; color: var(--trade-accent); }
+.terra .trade-contact-intro h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(54px, 5vw, 75px); line-height: 1.03; letter-spacing: -2.7px; }
+.terra .trade-contact-intro h1 em { font-size: 1em; }
+.trade-contact-description { font-size: 13px; line-height: 1.95; color: var(--trade-muted); max-width: 335px; }
+.trade-contact-guide { border-top: 1px solid var(--trade-line); margin-top: 45px; padding-top: 26px; max-width: 355px; }
+.trade-guide-label { font-size: 7px; letter-spacing: 1.4px; color: var(--trade-accent); }
+.trade-contact-guide p { display: flex; align-items: baseline; gap: 19px; font-size: 11px; color: var(--trade-muted); margin: 21px 0 0; line-height: 1.6; }
+.trade-contact-guide p > span { font-size: 8px; color: var(--trade-accent); }
+.trade-personal-note { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: 31px; line-height: 1.22; color: var(--trade-ink); margin: 55px 0 0; }
+.trade-personal-note em { color: var(--trade-accent); }
+.trade-contact-details { border-top: 1px solid var(--trade-line); padding-top: 20px; margin-top: 29px; }
+.trade-contact-details a, .trade-contact-details p { display: flex; gap: 12px; align-items: center; font-size: 12px; line-height: 1.8; color: var(--trade-muted); text-decoration: none; overflow-wrap: anywhere; }
+.trade-form-panel { color: var(--trade-panel-ink); background: var(--trade-panel); padding: 36px 36px 30px; }
+.trade-form-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin: 0 0 28px; }
+.trade-form-kicker { display: block; font-size: 8px; letter-spacing: 1.7px; font-weight: 600; color: #697253; }
+.trade-form-heading > span:last-child { font-size: 8px; color: var(--trade-panel-muted); }
+.trade-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.trade-form-panel label { display: flex; flex-direction: column; font-size: 10px; font-weight: 500; color: #4b573d; gap: 8px; margin-bottom: 21px; min-width: 0; }
+.trade-form-panel input, .trade-form-panel textarea, .trade-form-panel select { width: 100%; padding: 12px; min-height: 44px; background: #fffcf7b8; border: 1px solid #cbd0bd; border-radius: 0; color: #34402a; font-size: 11px; line-height: 1.6; min-width: 0; }
+.trade-form-panel input::placeholder, .trade-form-panel textarea::placeholder { color: #8a917f; opacity: 1; }
+.trade-form-panel textarea { resize: vertical; min-height: 114px; }
+.trade-form-panel input[aria-invalid='true'], .trade-form-panel textarea[aria-invalid='true'], .trade-form-panel select[aria-invalid='true'] { border-color: #a34833; }
+.trade-form-panel .trade-field-error { color: #9d3f2f; font-size: 10px; font-weight: 400; line-height: 1.5; }
+.trade-form-divider { display: flex; justify-content: space-between; align-items: baseline; gap: 15px; border-top: 1px solid #cbd0bd; margin: 9px 0 23px; padding-top: 23px; }
+.trade-form-divider > span:first-child { font-size: 7px; letter-spacing: 1.3px; color: #7b846c; }
+.trade-form-divider > span:last-child { font-size: 8px; color: #7f8771; }
+.trade-primary-button { display: flex; align-items: center; justify-content: space-between; gap: 18px; width: 100%; border: 1px solid transparent; padding: 16px 18px; background: var(--trade-button); color: var(--trade-button-text); font-size: 11px; font-weight: 500; text-decoration: none; min-height: 51px; transition: filter .2s; }
+.trade-primary-button:hover { filter: brightness(1.13); }
+.trade-form-note { font-size: 9px; line-height: 1.9; color: var(--trade-panel-muted); margin: 15px 0 0; }
+.trade-review-check { width: 49px; height: 49px; border-radius: 50%; border: 1px solid #bdc4ad; display: flex; align-items: center; justify-content: center; color: var(--trade-button); margin: 1px 0 27px; }
+.trade-review h2 { font-family: 'Cormorant Garamond', serif; font-size: 51px; letter-spacing: -1.8px; line-height: 1; font-weight: 400; margin: 18px 0 19px; outline: none; }
+.trade-review h2 em { color: var(--trade-button); }
+.trade-review-description { font-size: 11px; line-height: 1.9; color: var(--trade-panel-muted); margin: 0; max-width: 350px; }
+.trade-summary { border-top: 1px solid #c1c9b1; border-bottom: 1px solid #c1c9b1; padding: 18px 0; margin: 26px 0 25px; }
+.trade-summary > div { display: grid; grid-template-columns: 82px minmax(0,1fr); gap: 18px; padding: 8px 0; font-size: 11px; line-height: 1.7; }
+.trade-summary dt { color: #7a856d; font-size: 10px; }
+.trade-summary dd { margin: 0; overflow-wrap: anywhere; white-space: pre-wrap; color: #46533b; }
+.trade-summary-message { border-top: 1px solid #d0d5c3; margin-top: 9px; padding-top: 17px !important; }
+.trade-email-button { display: flex; justify-content: space-between; align-items: center; padding: 15px 18px; border: 1px solid #acb79c; margin-top: 11px; color: #5a684c; font-size: 11px; text-decoration: none; }
+.trade-review-bottom { display: flex; justify-content: space-between; gap: 15px; margin-top: 21px; }
+.trade-review-bottom a, .trade-review-bottom button { display: inline-flex; align-items: center; gap: 7px; background: none; border: 0; padding: 0; font-size: 10px; text-decoration: none; color: #748263; }
+.trade-review-bottom a:hover, .trade-review-bottom button:hover { text-decoration: underline; }
+.trade-form-notice { min-height: 15px; font-size: 10px; color: #49633b; line-height: 1.7; margin: 18px 0 0; }
+@media (max-width: 1180px) {
+  .trade-container { width: calc(100% - 88px); }
+  .trade-contact-layout { gap: 52px; grid-template-columns: .8fr 1.2fr; }
+  .trade-form-panel { padding: 29px; }
+  .trade-contact-intro h1 { font-size: 43px; letter-spacing: -2px; }
+  .terra .trade-contact-intro h1 { font-size: 58px; }
+}
+@media (max-width: 900px) {
+  .trade-container { width: calc(100% - 60px); }
+  .trade-contact-layout { gap: 35px; grid-template-columns: .8fr 1.2fr; margin-top: 48px; }
+  .trade-contact-intro h1 { font-size: 36px; }
+  .terra .trade-contact-intro h1 { font-size: 48px; }
+  .trade-contact-description { font-size: 12px; }
+  .trade-contact-guide p { font-size: 10px; gap: 11px; }
+  .trade-form-panel { padding: 24px; }
+  .trade-form-row { gap: 12px; }
+  .trade-personal-note { font-size: 26px; }
+}
+@media (max-width: 700px) {
+  .trade-container { width: calc(100% - 42px); }
+  .trade-contact-page { padding: 27px 0 58px; }
+  .trade-contact-layout { display: block; margin-top: 35px; }
+  .trade-contact-intro { padding: 0; }
+  .trade-contact-intro h1 { font-size: 46px; line-height: 1.15; letter-spacing: -2px; margin-top: 25px; }
+  .terra .trade-contact-intro h1 { font-size: 62px; }
+  .trade-contact-description { max-width: 420px; font-size: 12px; }
+  .trade-contact-guide { display: none; }
+  .trade-personal-note { display: none; }
+  .trade-form-panel { padding: 26px 20px 23px; margin-top: 34px; }
+  .trade-form-heading { gap: 10px; margin-bottom: 24px; }
+  .trade-form-heading > span:last-child { font-size: 7px; }
+  .trade-form-row { grid-template-columns: 1fr; gap: 0; }
+  .trade-form-panel input, .trade-form-panel textarea, .trade-form-panel select { font-size: 16px; padding: 12px; }
+  .trade-form-panel label { font-size: 11px; gap: 9px; }
+  .trade-form-panel input::placeholder, .trade-form-panel textarea::placeholder { font-size: 12px; }
+  .trade-form-panel select { font-size: 13px; }
+  .trade-review h2 { font-size: 45px; }
+  .trade-review-description { font-size: 12px; }
+  .trade-summary > div { grid-template-columns: 65px minmax(0,1fr); gap: 12px; }
+  .trade-summary-message { display: block !important; }
+  .trade-summary-message dt { margin-bottom: 8px; }
+  .trade-primary-button { font-size: 12px; }
+}
